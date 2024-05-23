@@ -21,7 +21,7 @@ export default function Home() {
 				</section> */}
 
 				<div class="h-screen text-center grid bg-cover bg-hero-cover">
-					<div class="col-start-1 row-start-1 bg-slate-100 bg-opacity-70 w-full h-full"></div>
+					<div class="col-start-1 row-start-1 bg-white/60 w-full h-full"></div>
 					<div class="col-start-1 row-start-1 mx-auto my-auto">
 						<div className="container">
 							<div className="text-center">
