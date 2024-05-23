@@ -9,7 +9,7 @@ export default function Navbar() {
 	const [navbar, setNavbar] = useState(false);
 	const router = useRouter();
 	return (
-		<nav className="w-full border-b border-b-slate-200 bg-slate-50/75 dark:border-b-slate-600 dark:bg-slate-900 md:sticky md:top-0 md:z-10 md:shadow-sm md:backdrop-blur-lg">
+		<nav className="w-full border-b border-b-slate-200 bg-slate-50/75 dark:border-b-slate-600 dark:bg-slate-900 md:fixed md:top-0 md:z-10 md:shadow-sm md:backdrop-blur-lg">
 			<div className="container mx-auto justify-between px-4 md:flex md:items-center">
 				<div className="flex items-center justify-between py-3 md:block md:py-5">
 					<div className="w-40 font-black text-2xl dark:text-slate-400">
@@ -55,52 +55,51 @@ export default function Navbar() {
 						<DarkModeToggle />
 					</div>
 				</div>
-				<div>
-					<div
-						className={`mt-8 flex-1 justify-self-center pb-3 md:mt-0 md:block md:pb-0 ${
-							navbar ? "block" : "hidden"
-						}`}
-					>
-						<ul className="items-center justify-center space-y-8 md:flex md:space-x-10 md:space-y-0">
-							<li>
-								<Link
-									href="/"
-									className={router.pathname == "/" ? "active" : ""}
-									onClick={() => setNavbar(false)}
-								>
-									/
-								</Link>
-							</li>
+				<div
+					className={`mt-8 flex-1 mr-auto pb-3 md:mt-0 md:block md:pb-0 ${
+						navbar ? "block" : "hidden"
+					}`}
+				>
+					<ul className="items-center justify-end space-y-8 md:flex md:space-x-10 md:space-y-0">
+						<li>
+							<Link
+								href="/"
+								className={router.pathname == "/" ? "active" : ""}
+								onClick={() => setNavbar(false)}
+							>
+								/
+							</Link>
+						</li>
 
-							<li>
-								<Link
-									href="/services"
-									className={router.pathname == "/services" ? "active" : ""}
-									onClick={() => setNavbar(false)}
-								>
-									About
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/work"
-									className={router.pathname == "/work" ? "active" : ""}
-									onClick={() => setNavbar(false)}
-								>
-									Work
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/contact"
-									className={router.pathname == "/contact" ? "active" : ""}
-									onClick={() => setNavbar(false)}
-								>
-									Contact
-								</Link>
-							</li>
-							<div className="flex items-center justify-between md:gap-4">
-								{/* <li className="group rounded-md border border-slate-200 bg-white text-slate-800 transition-all duration-200 hover:bg-green-500 dark:border-none dark:bg-green-600">
+						<li>
+							<Link
+								href="/services"
+								className={router.pathname == "/services" ? "active" : ""}
+								onClick={() => setNavbar(false)}
+							>
+								About
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="/work"
+								className={router.pathname == "/work" ? "active" : ""}
+								onClick={() => setNavbar(false)}
+							>
+								Work
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="/contact"
+								className={router.pathname == "/contact" ? "active" : ""}
+								onClick={() => setNavbar(false)}
+							>
+								Contact
+							</Link>
+						</li>
+						<div className="flex items-center justify-between md:gap-4">
+							{/* <li className="group rounded-md border border-slate-200 bg-white text-slate-800 transition-all duration-200 hover:bg-green-500 dark:border-none dark:bg-green-600">
 									<Link href="/contact" legacyBehavior>
 										<a className="flex items-center space-x-2 px-6 py-3 transition-all duration-200 hover:shadow-xl group-hover:text-white dark:text-slate-50">
 											<span>Start a Project</span>
@@ -121,12 +120,11 @@ export default function Navbar() {
 										</a>
 									</Link>
 								</li> */}
-								<li className="hidden sm:block">
-									<DarkModeToggle />
-								</li>
-							</div>
-						</ul>
-					</div>
+							<li className="hidden sm:block">
+								<DarkModeToggle />
+							</li>
+						</div>
+					</ul>
 				</div>
 			</div>
 		</nav>

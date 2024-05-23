@@ -7,10 +7,16 @@ module.exports = {
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
+		container: {
+			center: true,
+		},
 		extend: {
 			fontFamily: {
 				heading: ["var(--font-satoshi)"],
 				body: ["var(--font-manrope)"],
+			},
+			backgroundImage: {
+				"hero-cover": "url('/cover.jpg')",
 			},
 		},
 	},
