@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    nav li {
+        @apply text-lg font-semibold text-slate-900 hover:text-slate-600
+    }
+}
