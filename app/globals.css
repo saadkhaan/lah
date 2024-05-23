@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 @layer components {
+    h1, h2, h3 {
+        @apply font-heading dark:text-slate-500
+    }
+    h1 {
+        @apply font-black text-6xl 
+    }
+    h2 {
+        @apply font-bold text-5xl
+    }
+    p {
+        @apply text-gray-500 tracking-wide dark:text-slate-400
+    }
     nav li {
-        @apply text-lg font-semibold text-slate-900 hover:text-slate-600
+        @apply text-lg font-semibold text-slate-900 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300
     }
 }
