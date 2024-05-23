@@ -7,10 +7,10 @@
         @apply font-heading dark:text-slate-500
     }
     h1 {
-        @apply font-black text-6xl 
+        @apply font-black text-4xl sm:text-6xl
     }
     h2 {
-        @apply font-bold text-5xl
+        @apply font-bold sm:text-5xl
     }
     p {
         @apply text-gray-500 tracking-wide dark:text-slate-400

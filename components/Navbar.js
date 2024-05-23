@@ -12,7 +12,7 @@ export default function Navbar() {
 		<nav className="w-full border-b border-b-slate-200 bg-slate-50/75 dark:border-b-slate-600 dark:bg-slate-900 md:sticky md:top-0 md:z-10 md:shadow-sm md:backdrop-blur-lg">
 			<div className="container mx-auto justify-between px-4 md:flex md:items-center">
 				<div className="flex items-center justify-between py-3 md:block md:py-5">
-					<div className="w-40 font-black text-2xl">
+					<div className="w-40 font-black text-2xl dark:text-slate-400">
 						<Link href="/">L.A.H</Link>
 					</div>
 					<div className="md:hidden">
@@ -52,7 +52,7 @@ export default function Navbar() {
 							)}
 						</button>
 
-						{/* <DarkModeToggle /> */}
+						<DarkModeToggle />
 					</div>
 				</div>
 				<div>
