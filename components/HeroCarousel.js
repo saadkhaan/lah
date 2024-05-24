@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { register } from "swiper/element/bundle";
-register();
+// register();
 
 export default function HeroCarousel() {
 	const swiperRef = useRef(null);
