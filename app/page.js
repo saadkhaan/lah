@@ -1,5 +1,6 @@
 import React from "react";
 import coverImage from "../public/cover.jpg";
+import HeroCarousel from "@/components/HeroCarousel";
 
 export default function Home() {
 	return (
@@ -20,7 +21,7 @@ export default function Home() {
 					</div>
 				</section> */}
 
-				<div class="h-screen text-center grid bg-cover bg-hero-cover">
+				{/* <div class="h-screen text-center grid bg-cover bg-hero-cover">
 					<div class="col-start-1 row-start-1 bg-white/60 w-full h-full"></div>
 					<div class="col-start-1 row-start-1 mx-auto my-auto">
 						<div className="container">
@@ -36,7 +37,10 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
+				<section className="hero h-screen">
+					<HeroCarousel />
+				</section>
 			</main>
 		</>
 	);

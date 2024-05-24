@@ -1,0 +1,97 @@
+"use client";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { register } from "swiper/element/bundle";
+register();
+
+export default function HeroCarousel() {
+	const swiperRef = useRef(null);
+
+	useEffect(() => {
+		// Register Swiper web component
+		register();
+
+		// Object with parameters
+		const params = {
+			slidesPerView: 1,
+			autoHeight: true,
+			breakpoints: {
+				768: {
+					slidesPerView: 1,
+				},
+			},
+		};
+
+		// Assign it to swiper element
+		Object.assign(swiperRef.current, params);
+
+		// initialize swiper
+		swiperRef.current.initialize();
+	}, []);
+
+	return (
+		<swiper-container
+			init="false"
+			ref={swiperRef}
+			navigation="true"
+			autoHeight={true}
+		>
+			<swiper-slide>
+				<div>
+					<Image
+						src="/cover.jpg"
+						alt="a room"
+						width={1920}
+						height={0}
+						className="relative"
+					/>
+					<p className="absolute uppercase text-white text-2xl bottom-0 pl-20 pb-20">
+						Devon Home | Dartmouth, England
+					</p>
+				</div>
+			</swiper-slide>
+			<swiper-slide>
+				<div>
+					<Image
+						src="/cover2.jpg"
+						alt="a room"
+						width={1920}
+						height={0}
+						className="relative"
+					/>
+					<p className="absolute uppercase text-white text-2xl bottom-0 pl-20 pb-20">
+						Devon Home | Dartmouth, England
+					</p>
+				</div>
+			</swiper-slide>
+			<swiper-slide>
+				<div>
+					<Image
+						src="/cover3.jpg"
+						alt="a room"
+						width={1920}
+						height={0}
+						className="relative"
+					/>
+					<p className="absolute uppercase text-white text-2xl bottom-0 pl-20 pb-20">
+						Devon Home | Dartmouth, England
+					</p>
+				</div>
+			</swiper-slide>
+			<swiper-slide>
+				<div>
+					<Image
+						src="/cover4.jpg"
+						alt="a room"
+						width={1920}
+						height={0}
+						className="relative"
+					/>
+					<p className="absolute uppercase text-white text-2xl bottom-0 pl-20 pb-20">
+						Devon Home | Dartmouth, England
+					</p>
+				</div>
+			</swiper-slide>
+		</swiper-container>
+	);
+}

@@ -18,7 +18,7 @@ const satoshi = localFont({
 });
 
 export const metadata = {
-	title: "Laith Abdul Hadi",
+	title: "Laith AbdelHadi",
 	description: "Interior design with a passion",
 };
 
