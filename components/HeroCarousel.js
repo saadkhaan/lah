@@ -44,12 +44,12 @@ export default function HeroCarousel() {
 					<Image
 						src="/cover.jpg"
 						alt="a room"
-						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 100vw"
 						fill
 						className="w-full h-full object-cover"
 					/>
-					<p className="absolute uppercase text-white sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						Devon Home | Dartmouth, England
+					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+						Devon Home, Dartmouth, England
 					</p>
 				</div>
 			</swiper-slide>
@@ -58,12 +58,12 @@ export default function HeroCarousel() {
 					<Image
 						src="/cover2.jpg"
 						alt="a room"
-						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 100vw"
 						fill
 						className="w-full h-full object-cover"
 					/>
-					<p className="absolute uppercase text-white sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						Devon Home | Dartmouth, England
+					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+						Devon Home, Dartmouth, England
 					</p>
 				</div>
 			</swiper-slide>
@@ -72,12 +72,12 @@ export default function HeroCarousel() {
 					<Image
 						src="/cover3.jpg"
 						alt="a room"
-						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 100vw"
 						fill
 						className="w-full h-full object-cover"
 					/>
-					<p className="absolute uppercase text-white sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						Devon Home | Dartmouth, England
+					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+						Devon Home, Dartmouth, England
 					</p>
 				</div>
 			</swiper-slide>
@@ -86,12 +86,12 @@ export default function HeroCarousel() {
 					<Image
 						src="/cover4.jpg"
 						alt="a room"
-						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
 						fill
 						className="w-full h-full object-cover"
 					/>
-					<p className="absolute uppercase text-white sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						Devon Home | Dartmouth, England
+					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+						Devon Home, Dartmouth, England
 					</p>
 				</div>
 			</swiper-slide>

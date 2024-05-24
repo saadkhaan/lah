@@ -22,9 +22,9 @@ const ThemeSwitch = () => {
 			aria-label="Change color mode"
 		>
 			{theme === "dark" ? (
-				<FiSun size={24} className="text-slate-100 dark:text-slate-300" />
+				<FiSun size={24} className="sm:text-slate-100 dark:text-slate-300" />
 			) : (
-				<FiMoon size={24} className="text-slate-100 dark:text-slate-300" />
+				<FiMoon size={24} className="sm:text-slate-100 dark:text-slate-300" />
 			)}
 		</button>
 	);
