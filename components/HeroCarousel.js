@@ -48,7 +48,7 @@ export default function HeroCarousel() {
 						height={0}
 						className="relative"
 					/>
-					<p className="absolute uppercase text-white sm:text-2xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						Devon Home | Dartmouth, England
 					</p>
 				</div>
@@ -62,7 +62,7 @@ export default function HeroCarousel() {
 						height={0}
 						className="relative"
 					/>
-					<p className="absolute uppercase text-white sm:text-2xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						Devon Home | Dartmouth, England
 					</p>
 				</div>
@@ -76,7 +76,7 @@ export default function HeroCarousel() {
 						height={0}
 						className="relative"
 					/>
-					<p className="absolute uppercase text-white sm:text-2xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						Devon Home | Dartmouth, England
 					</p>
 				</div>
@@ -90,7 +90,7 @@ export default function HeroCarousel() {
 						height={0}
 						className="relative"
 					/>
-					<p className="absolute uppercase text-white sm:text-2xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						Devon Home | Dartmouth, England
 					</p>
 				</div>
