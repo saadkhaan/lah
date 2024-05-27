@@ -15,6 +15,7 @@ export default function HeroCarousel() {
 		const params = {
 			slidesPerView: 1,
 			autoHeight: true,
+			grabCursor: true,
 			autoplay: {
 				delay: 5000,
 			},
