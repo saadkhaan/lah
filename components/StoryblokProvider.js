@@ -4,7 +4,7 @@ import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
 
 /** 2. Initialize it as usual */
 storyblokInit({
-	accessToken: "2QY3Y4i0NxnVqtXOSmIQqAtt",
+	accessToken: process.env.TOKEN,
 	use: [apiPlugin],
 });
 
