@@ -61,7 +61,7 @@ export default function Navbar() {
 					}`}
 				>
 					<ul className="items-center justify-end space-y-8 md:flex md:space-x-10 md:space-y-0">
-						<li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
+						<li>
 							<Link
 								href="/"
 								className={router.pathname == "/" ? "active" : ""}
@@ -71,7 +71,7 @@ export default function Navbar() {
 							</Link>
 						</li>
 
-						<li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
+						<li>
 							<Link
 								href="/services"
 								className={router.pathname == "/services" ? "active" : ""}
@@ -80,7 +80,7 @@ export default function Navbar() {
 								About
 							</Link>
 						</li>
-						<li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
+						<li>
 							<Link
 								href="/work"
 								className={router.pathname == "/work" ? "active" : ""}
@@ -89,7 +89,7 @@ export default function Navbar() {
 								Work
 							</Link>
 						</li>
-						<li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
+						<li>
 							<Link
 								href="/contact"
 								className={router.pathname == "/contact" ? "active" : ""}
