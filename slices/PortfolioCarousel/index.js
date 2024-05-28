@@ -1,5 +1,6 @@
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { PrismicRichText } from "@prismicio/react";
+import { Children } from "react";
 
 /**
  * @typedef {import("@prismicio/client").Content.PortfolioCarouselSlice} PortfolioCarouselSlice
@@ -13,7 +14,7 @@ const PortfolioCarousel = ({ slice }) => {
 			data-slice-variation={slice.variation}
 		>
 			<PrismicNextLink field={slice.primary.portfolio_link}>
-				<PrismicRichText field={slice.primary.portofolio_title} />
+				{slice.primary.portfolio_title}
 			</PrismicNextLink>
 			<PrismicNextImage field={slice.primary.portfoio_image} />
 		</section>
