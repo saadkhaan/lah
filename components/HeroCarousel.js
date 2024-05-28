@@ -50,7 +50,7 @@ export default function HeroCarousel() {
 							fill
 							className="w-full h-full object-cover object-center"
 						/>
-						<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+						<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0 text-shadow">
 							Devon Home, Dartmouth, England
 						</p>
 					</div>
@@ -64,7 +64,7 @@ export default function HeroCarousel() {
 							fill
 							className="w-full h-full object-cover object-center"
 						/>
-						<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+						<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0 text-shadow">
 							Devon Home, Dartmouth, England
 						</p>
 					</div>
@@ -78,7 +78,7 @@ export default function HeroCarousel() {
 							fill
 							className="w-full h-full object-cover object-center"
 						/>
-						<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+						<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0 text-shadow">
 							Devon Home, Dartmouth, England
 						</p>
 					</div>
@@ -92,7 +92,7 @@ export default function HeroCarousel() {
 							fill
 							className="w-full h-full object-cover object-center"
 						/>
-						<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+						<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0 text-shadow">
 							Devon Home, Dartmouth, England
 						</p>
 					</div>

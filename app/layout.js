@@ -1,8 +1,10 @@
+// import { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Providers from "./providers";
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
+import { createClient } from "@/prismicio";
 
 const manrope = Manrope({
 	weight: ["400", "500", "600", "700", "800"],
@@ -17,10 +19,18 @@ const satoshi = localFont({
 	variable: "--font-satoshi",
 });
 
-export const metadata = {
-	title: "Laith AbdelHadi",
-	description: "Interior design with a passion",
-};
+export async function metadata({ params, searchParams }, parent) {
+	const client = createClient();
+	const settings = await client.getSingle("settings");
+
+	return {
+		title: settings.data.meta_title || "Laith AbdelHadi",
+		description: settings.data.meta_description || "Laith AbdelHadi",
+		// openGraph: {
+		// 	images: ["/some-specific-page-image.jpg", ...previousImages],
+		// },
+	};
+}
 
 export default function RootLayout({ children }) {
 	return (
