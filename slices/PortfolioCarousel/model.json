@@ -1,0 +1,42 @@
+{
+  "id": "portfolio_carousel",
+  "type": "SharedSlice",
+  "name": "PortfolioCarousel",
+  "description": "PortfolioCarousel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "portfolio_title": {
+          "type": "Text",
+          "config": {
+            "label": "Portfolio Title",
+            "placeholder": ""
+          }
+        },
+        "portfolio_link": {
+          "type": "Link",
+          "config": {
+            "label": "Portfolio Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "portfoio_image": {
+          "type": "Image",
+          "config": {
+            "label": "Portfoio Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

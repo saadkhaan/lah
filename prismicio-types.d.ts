@@ -80,6 +80,71 @@ export type HomepageDocument<Lang extends string = string> =
     Lang
   >;
 
+type PortfolioDocumentDataSlicesSlice = PortfolioCarouselSlice;
+
+/**
+ * Content for Portfolio documents
+ */
+interface PortfolioDocumentData {
+  /**
+   * Slice Zone field in *Portfolio*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<PortfolioDocumentDataSlicesSlice> /**
+   * Meta Description field in *Portfolio*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: portfolio.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Portfolio*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Portfolio*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: portfolio.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Portfolio document from Prismic
+ *
+ * - **API ID**: `portfolio`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type PortfolioDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<PortfolioDocumentData>,
+    "portfolio",
+    Lang
+  >;
+
 /**
  * Item in *Settings → Navigation*
  */
@@ -170,7 +235,75 @@ export type SettingsDocument<Lang extends string = string> =
     Lang
   >;
 
-export type AllDocumentTypes = HomepageDocument | SettingsDocument;
+export type AllDocumentTypes =
+  | HomepageDocument
+  | PortfolioDocument
+  | SettingsDocument;
+
+/**
+ * Primary content in *PortfolioCarousel → Default → Primary*
+ */
+export interface PortfolioCarouselSliceDefaultPrimary {
+  /**
+   * Portfolio Title field in *PortfolioCarousel → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_carousel.default.primary.portfolio_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  portfolio_title: prismic.KeyTextField;
+
+  /**
+   * Portfolio Link field in *PortfolioCarousel → Default → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_carousel.default.primary.portfolio_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  portfolio_link: prismic.LinkField;
+
+  /**
+   * Portfoio Image field in *PortfolioCarousel → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_carousel.default.primary.portfoio_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  portfoio_image: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for PortfolioCarousel Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PortfolioCarouselSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<PortfolioCarouselSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *PortfolioCarousel*
+ */
+type PortfolioCarouselSliceVariation = PortfolioCarouselSliceDefault;
+
+/**
+ * PortfolioCarousel Shared Slice
+ *
+ * - **API ID**: `portfolio_carousel`
+ * - **Description**: PortfolioCarousel
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PortfolioCarouselSlice = prismic.SharedSlice<
+  "portfolio_carousel",
+  PortfolioCarouselSliceVariation
+>;
 
 declare module "@prismicio/client" {
   interface CreateClient {
@@ -185,10 +318,17 @@ declare module "@prismicio/client" {
       HomepageDocument,
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
+      PortfolioDocument,
+      PortfolioDocumentData,
+      PortfolioDocumentDataSlicesSlice,
       SettingsDocument,
       SettingsDocumentData,
       SettingsDocumentDataNavigationItem,
       AllDocumentTypes,
+      PortfolioCarouselSlice,
+      PortfolioCarouselSliceDefaultPrimary,
+      PortfolioCarouselSliceVariation,
+      PortfolioCarouselSliceDefault,
     };
   }
 }
