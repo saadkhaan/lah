@@ -4,7 +4,7 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type HomepageDocumentDataSlicesSlice = never;
+type HomepageDocumentDataSlicesSlice = PortfolioCarouselSlice;
 
 /**
  * Content for Homepage documents
@@ -77,71 +77,6 @@ export type HomepageDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithoutUID<
     Simplify<HomepageDocumentData>,
     "homepage",
-    Lang
-  >;
-
-type PortfolioDocumentDataSlicesSlice = PortfolioCarouselSlice;
-
-/**
- * Content for Portfolio documents
- */
-interface PortfolioDocumentData {
-  /**
-   * Slice Zone field in *Portfolio*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: portfolio.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<PortfolioDocumentDataSlicesSlice> /**
-   * Meta Description field in *Portfolio*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: portfolio.meta_description
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */;
-  meta_description: prismic.KeyTextField;
-
-  /**
-   * Meta Image field in *Portfolio*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: portfolio.meta_image
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  meta_image: prismic.ImageField<never>;
-
-  /**
-   * Meta Title field in *Portfolio*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: portfolio.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
-}
-
-/**
- * Portfolio document from Prismic
- *
- * - **API ID**: `portfolio`
- * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type PortfolioDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithoutUID<
-    Simplify<PortfolioDocumentData>,
-    "portfolio",
     Lang
   >;
 
@@ -235,44 +170,58 @@ export type SettingsDocument<Lang extends string = string> =
     Lang
   >;
 
-export type AllDocumentTypes =
-  | HomepageDocument
-  | PortfolioDocument
-  | SettingsDocument;
+export type AllDocumentTypes = HomepageDocument | SettingsDocument;
+
+/**
+ * Item in *PortfolioCarousel → Default → Primary → Portfolio*
+ */
+export interface PortfolioCarouselSliceDefaultPrimaryPortfolioItem {
+  /**
+   * Link field in *PortfolioCarousel → Default → Primary → Portfolio*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_carousel.default.primary.portfolio[].link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link: prismic.LinkField;
+
+  /**
+   * Title field in *PortfolioCarousel → Default → Primary → Portfolio*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_carousel.default.primary.portfolio[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Image field in *PortfolioCarousel → Default → Primary → Portfolio*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: portfolio_carousel.default.primary.portfolio[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+}
 
 /**
  * Primary content in *PortfolioCarousel → Default → Primary*
  */
 export interface PortfolioCarouselSliceDefaultPrimary {
   /**
-   * Portfolio Title field in *PortfolioCarousel → Default → Primary*
+   * Portfolio field in *PortfolioCarousel → Default → Primary*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Group
    * - **Placeholder**: *None*
-   * - **API ID Path**: portfolio_carousel.default.primary.portfolio_title
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **API ID Path**: portfolio_carousel.default.primary.portfolio[]
+   * - **Documentation**: https://prismic.io/docs/field#group
    */
-  portfolio_title: prismic.KeyTextField;
-
-  /**
-   * Portfolio Link field in *PortfolioCarousel → Default → Primary*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: portfolio_carousel.default.primary.portfolio_link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  portfolio_link: prismic.LinkField;
-
-  /**
-   * Portfoio Image field in *PortfolioCarousel → Default → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: portfolio_carousel.default.primary.portfoio_image
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  portfoio_image: prismic.ImageField<never>;
+  portfolio: prismic.GroupField<
+    Simplify<PortfolioCarouselSliceDefaultPrimaryPortfolioItem>
+  >;
 }
 
 /**
@@ -318,14 +267,12 @@ declare module "@prismicio/client" {
       HomepageDocument,
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
-      PortfolioDocument,
-      PortfolioDocumentData,
-      PortfolioDocumentDataSlicesSlice,
       SettingsDocument,
       SettingsDocumentData,
       SettingsDocumentDataNavigationItem,
       AllDocumentTypes,
       PortfolioCarouselSlice,
+      PortfolioCarouselSliceDefaultPrimaryPortfolioItem,
       PortfolioCarouselSliceDefaultPrimary,
       PortfolioCarouselSliceVariation,
       PortfolioCarouselSliceDefault,

@@ -12,27 +12,36 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "portfolio_title": {
-          "type": "Text",
+        "portfolio": {
+          "type": "Group",
           "config": {
-            "label": "Portfolio Title",
-            "placeholder": ""
-          }
-        },
-        "portfolio_link": {
-          "type": "Link",
-          "config": {
-            "label": "Portfolio Link",
-            "placeholder": "",
-            "select": null
-          }
-        },
-        "portfoio_image": {
-          "type": "Image",
-          "config": {
-            "label": "Portfoio Image",
-            "constraint": {},
-            "thumbnails": []
+            "label": "Portfolio",
+            "repeat": true,
+            "fields": {
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "select": null
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": ""
+                }
+              },
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
           }
         }
       },
