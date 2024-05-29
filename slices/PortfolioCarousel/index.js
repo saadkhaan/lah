@@ -12,7 +12,7 @@ const PortfolioCarousel = ({ slice }) => {
 			data-slice-variation={slice.variation}
 		>
 			<>
-				<ul className="">
+				<ul>
 					{slice.primary.portfolio.map((item, index) => (
 						<li
 							key={index}
@@ -20,7 +20,9 @@ const PortfolioCarousel = ({ slice }) => {
 						>
 							<PrismicNextImage
 								field={item.image}
-								className="w-full h-full object-cover absolute"
+								className="w-full h-full object-cover"
+								fill
+								alt=""
 							/>
 							<PrismicNextLink
 								field={item.link}
