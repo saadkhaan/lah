@@ -15,8 +15,8 @@ export default async function Home() {
 		<>
 			<main className="min-h-screen">
 				<section className="hero h-screen">
-					<SliceZone slices={page.data.slices} components={components} />
-					{/* <HeroCarousel /> */}
+					{/* <SliceZone slices={page.data.slices} components={components} /> */}
+					<HeroCarousel />
 				</section>
 			</main>
 		</>
