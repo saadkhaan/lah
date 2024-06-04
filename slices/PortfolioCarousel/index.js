@@ -5,16 +5,31 @@ import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
  * @typedef {import("@prismicio/react").SliceComponentProps<PortfolioCarouselSlice>} PortfolioCarouselProps
  * @param {PortfolioCarouselProps}
  */
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 const PortfolioCarousel = ({ slice }) => {
+	var settings = {
+		dots: false,
+		arrows: true,
+		accessibility: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	};
+
 	return (
 		<section
 			data-slice-type={slice.slice_type}
 			data-slice-variation={slice.variation}
 		>
 			<>
-				<ul>
+				<Slider {...settings}>
 					{slice.primary.portfolio.map((item, index) => (
-						<li
+						<div
 							key={index}
 							className="relative block w-screen h-screen h-screen-mobile"
 						>
@@ -30,9 +45,9 @@ const PortfolioCarousel = ({ slice }) => {
 							>
 								{item.title}
 							</PrismicNextLink>
-						</li>
+						</div>
 					))}
-				</ul>
+				</Slider>
 			</>
 		</section>
 	);

@@ -1,0 +1,52 @@
+{
+  "id": "portfolio",
+  "type": "SharedSlice",
+  "name": "Portfolio",
+  "description": "Portfolio",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "portfolio_title": {
+          "type": "Text",
+          "config": {
+            "label": "Portfolio Title",
+            "placeholder": ""
+          }
+        },
+        "portfolio_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Portfolio Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "project_details": {
+          "type": "Group",
+          "config": {
+            "label": "Project Details",
+            "repeat": true,
+            "fields": {
+              "project_images": {
+                "type": "Image",
+                "config": {
+                  "label": "Project Images",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
