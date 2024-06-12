@@ -20,6 +20,9 @@
           "choices": {
             "portfolio_carousel": {
               "type": "SharedSlice"
+            },
+            "work": {
+              "type": "SharedSlice"
             }
           }
         }

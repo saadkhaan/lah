@@ -1,0 +1,52 @@
+{
+  "format": "custom",
+  "id": "work",
+  "label": "Work",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "work_title": {
+        "type": "Text",
+        "config": {
+          "label": "Work Title",
+          "placeholder": ""
+        }
+      },
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "work_image": {
+        "type": "Image",
+        "config": {
+          "label": "Work Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "work_body_text": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Work Body Text",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading2,heading3,strong,em,hyperlink"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "work": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"work_relation": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "mock_document_id"
+				}
+			},
+			"work_main_heading": {
+				"__TYPE__": "FieldContent",
+				"value": "officer",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

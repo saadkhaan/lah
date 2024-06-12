@@ -4,7 +4,7 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type CaseStudyDocumentDataSlicesSlice = PortfolioSlice;
+type CaseStudyDocumentDataSlicesSlice = WorkSlice;
 
 /**
  * Content for Case study documents
@@ -80,7 +80,7 @@ export type CaseStudyDocument<Lang extends string = string> =
     Lang
   >;
 
-type HomepageDocumentDataSlicesSlice = PortfolioCarouselSlice;
+type HomepageDocumentDataSlicesSlice = PortfolioCarouselSlice | WorkSlice;
 
 /**
  * Content for Homepage documents
@@ -322,11 +322,75 @@ export type SettingsDocument<Lang extends string = string> =
     Lang
   >;
 
+type WorkDocumentDataSlicesSlice = WorkSlice;
+
+/**
+ * Content for Work documents
+ */
+interface WorkDocumentData {
+  /**
+   * Work Title field in *Work*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: work.work_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  work_title: prismic.KeyTextField;
+
+  /**
+   * Work Image field in *Work*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: work.work_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  work_image: prismic.ImageField<never>;
+
+  /**
+   * Work Body Text field in *Work*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: work.work_body_text
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  work_body_text: prismic.RichTextField;
+
+  /**
+   * Slice Zone field in *Work*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: work.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<WorkDocumentDataSlicesSlice>;
+}
+
+/**
+ * Work document from Prismic
+ *
+ * - **API ID**: `work`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type WorkDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<WorkDocumentData>, "work", Lang>;
+
 export type AllDocumentTypes =
   | CaseStudyDocument
   | HomepageDocument
   | PortfolioPageDocument
-  | SettingsDocument;
+  | SettingsDocument
+  | WorkDocument;
 
 /**
  * Item in *Portfolio → Default → Primary → Project Details*
@@ -492,6 +556,58 @@ export type PortfolioCarouselSlice = prismic.SharedSlice<
   PortfolioCarouselSliceVariation
 >;
 
+/**
+ * Primary content in *Work → Default → Primary*
+ */
+export interface WorkSliceDefaultPrimary {
+  /**
+   * Work Relation field in *Work → Default → Primary*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: work.default.primary.work_relation
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  work_relation: prismic.ContentRelationshipField<"case_study">;
+
+  /**
+   * Work Main Heading field in *Work → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: work.default.primary.work_main_heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  work_main_heading: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for Work Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WorkSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<WorkSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Work*
+ */
+type WorkSliceVariation = WorkSliceDefault;
+
+/**
+ * Work Shared Slice
+ *
+ * - **API ID**: `work`
+ * - **Description**: Work
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WorkSlice = prismic.SharedSlice<"work", WorkSliceVariation>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -514,6 +630,9 @@ declare module "@prismicio/client" {
       SettingsDocument,
       SettingsDocumentData,
       SettingsDocumentDataNavigationItem,
+      WorkDocument,
+      WorkDocumentData,
+      WorkDocumentDataSlicesSlice,
       AllDocumentTypes,
       PortfolioSlice,
       PortfolioSliceDefaultPrimaryProjectDetailsItem,
@@ -525,6 +644,10 @@ declare module "@prismicio/client" {
       PortfolioCarouselSliceDefaultPrimary,
       PortfolioCarouselSliceVariation,
       PortfolioCarouselSliceDefault,
+      WorkSlice,
+      WorkSliceDefaultPrimary,
+      WorkSliceVariation,
+      WorkSliceDefault,
     };
   }
 }

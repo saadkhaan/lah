@@ -6,12 +6,6 @@
   "status": true,
   "json": {
     "Main": {
-      "uid": {
-        "config": {
-          "label": "UID"
-        },
-        "type": "UID"
-      },
       "project_title": {
         "type": "Text",
         "config": {
@@ -19,12 +13,18 @@
           "placeholder": ""
         }
       },
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "portfolio": {
+            "work": {
               "type": "SharedSlice"
             }
           }

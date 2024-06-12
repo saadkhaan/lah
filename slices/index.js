@@ -5,4 +5,5 @@ import dynamic from "next/dynamic";
 export const components = {
   portfolio: dynamic(() => import("./Portfolio")),
   portfolio_carousel: dynamic(() => import("./PortfolioCarousel")),
+  work: dynamic(() => import("./Work")),
 };

@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const PortfolioCarousel = ({ slice }) => {
+const PortfolioCarousel = ({ slice, params }) => {
 	var settings = {
 		dots: false,
 		arrows: true,
@@ -39,6 +39,7 @@ const PortfolioCarousel = ({ slice }) => {
 								fill
 								alt=""
 							/>
+
 							<PrismicNextLink
 								field={item.link}
 								className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0 text-shadow"

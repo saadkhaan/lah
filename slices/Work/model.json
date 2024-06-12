@@ -1,0 +1,36 @@
+{
+  "id": "work",
+  "type": "SharedSlice",
+  "name": "Work",
+  "description": "Work",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "work_relation": {
+          "type": "Link",
+          "config": {
+            "label": "Work Relation",
+            "select": "document",
+            "customtypes": [
+              "case_study"
+            ]
+          }
+        },
+        "work_main_heading": {
+          "type": "Text",
+          "config": {
+            "label": "Work Main Heading",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
