@@ -63,7 +63,7 @@ export default function HeroCarousel() {
 			<swiper-slide>
 				<div className="relative block w-screen h-screen h-screen-mobile">
 					<Image
-						src="/projects/DevonManorEngland/Devon1.jpg"
+						src="/projects/DevonManorEngland/Devon1.JPG"
 						alt="a room"
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 100vw"
 						fill
