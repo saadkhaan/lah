@@ -11,7 +11,7 @@ export default function Page() {
 				<div className="grid md:grid-cols-3 gap-6 mt-4 projects-grid">
 					<Link href="./projects/belgravia-mews">
 						<div className="col-1">
-							<div className="h-72 image-container relative mb-2">
+							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
 									src="/projects/BelgraviaMewsLondon/Mews2.JPG"
 									fill
@@ -24,7 +24,7 @@ export default function Page() {
 					</Link>
 					<Link href="/">
 						<div className="col-1">
-							<div className="h-72 image-container relative mb-2">
+							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
 									src="/projects/DevonManorEngland/Devon1.JPG"
 									fill
@@ -37,7 +37,7 @@ export default function Page() {
 					</Link>
 					<Link href="/">
 						<div className="col-1">
-							<div className="h-72 image-container relative mb-2">
+							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
 									src="/projects/ElizabethStreetLondon/ElizabethStreet9.jpg"
 									fill
@@ -50,7 +50,7 @@ export default function Page() {
 					</Link>
 					<Link href="/">
 						<div className="col-1">
-							<div className="h-72 image-container relative mb-2">
+							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
 									src="/projects/JeddahHomeSaudiArabia/JeddahHome2.png"
 									fill
@@ -63,7 +63,7 @@ export default function Page() {
 					</Link>
 					<Link href="/">
 						<div className="col-1">
-							<div className="h-72 image-container relative mb-2">
+							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
 									src="/projects/MonteCarloMonaco/MonteCarlo1.jpg"
 									fill
@@ -76,7 +76,7 @@ export default function Page() {
 					</Link>
 					<Link href="/">
 						<div className="col-1">
-							<div className="h-72 image-container relative mb-2">
+							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
 									src="/projects/PontStHomeLondon/Pont2.JPG"
 									fill
@@ -90,7 +90,7 @@ export default function Page() {
 
 					<Link href="/">
 						<div className="col-1">
-							<div className="h-72 image-container relative mb-2">
+							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
 									src="/projects/VictoriaLondon/victoria6.jpg"
 									fill
