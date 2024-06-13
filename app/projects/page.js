@@ -13,7 +13,7 @@ export default function Page() {
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
 								<Image
-									src="/projects/BelgraviaMewsLondon/Mews2.jpg"
+									src="/projects/BelgraviaMewsLondon/Mews2.JPG"
 									fill
 									alt="Belgravia Mews London"
 									className="object-cover"
@@ -78,7 +78,7 @@ export default function Page() {
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
 								<Image
-									src="/projects/PontStHomeLondon/Pont2.jpg"
+									src="/projects/PontStHomeLondon/Pont2.JPG"
 									fill
 									alt="Pont St. Home, London"
 									className="object-cover"
