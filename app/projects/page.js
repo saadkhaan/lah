@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function Page() {
 	return (
-		<div className="py-32">
+		<div className="py-32 px-4">
 			<div className="container">
 				{/* <h1 className="text-4xl">Projects</h1> */}
-				<div className="grid grid-cols-3 gap-6 mt-4 projects-grid">
+				<div className="grid md:grid-cols-3 gap-6 mt-4 projects-grid">
 					<Link href="./projects/belgravia-mews">
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
@@ -39,9 +39,9 @@ export default function Page() {
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
 								<Image
-									src="/projects/ElizabethStreetLondon/PHOTO-2024-02-21-19-21-45_12.jpg"
+									src="/projects/ElizabethStreetLondon/ElizabethStreet9.jpg"
 									fill
-									alt="Devon Manor England"
+									alt="Elizabeth Street"
 									className="object-cover"
 								/>
 							</div>
@@ -52,9 +52,9 @@ export default function Page() {
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
 								<Image
-									src="/projects/JeddahHomeSaudiArabia/DEC 11 2019 (2).png"
+									src="/projects/JeddahHomeSaudiArabia/JeddahHome2.png"
 									fill
-									alt="Devon Manor England"
+									alt="Jeddah Home"
 									className="object-cover"
 								/>
 							</div>
@@ -65,7 +65,7 @@ export default function Page() {
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
 								<Image
-									src="/projects/MonteCarloMonaco/PHOTO-2024-02-21-19-21-45_13.jpg"
+									src="/projects/MonteCarloMonaco/MonteCarlo1.jpg"
 									fill
 									alt="Devon Manor England"
 									className="object-cover"
@@ -78,7 +78,7 @@ export default function Page() {
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
 								<Image
-									src="/projects/PontStHomeLondon/SSH 5.JPG"
+									src="/projects/PontStHomeLondon/Pont2.jpg"
 									fill
 									alt="Pont St. Home, London"
 									className="object-cover"
@@ -92,7 +92,7 @@ export default function Page() {
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
 								<Image
-									src="/projects/VictoriaLondon/PHOTO-2024-01-05-10-00-01.jpg"
+									src="/projects/VictoriaLondon/victoria6.jpg"
 									fill
 									alt="Victoria, London"
 									className="object-cover"
