@@ -72,7 +72,7 @@ export default function Navbar() {
 							</Link>
 						</li>
 
-						<li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
+						{/* <li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
 							<Link
 								href="/services"
 								className={currentPath.pathname == "/services" ? "active" : ""}
@@ -80,7 +80,7 @@ export default function Navbar() {
 							>
 								About
 							</Link>
-						</li>
+						</li> */}
 						<li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
 							<Link
 								href="/projects"
