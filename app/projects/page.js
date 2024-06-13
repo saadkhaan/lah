@@ -7,7 +7,7 @@ export default function Page() {
 	return (
 		<div className="py-32 px-4">
 			<div className="container">
-				{/* <h1 className="text-4xl">Projects</h1> */}
+				<h1 className="text-4xl">Projects</h1>
 				<div className="grid md:grid-cols-3 gap-6 mt-4 projects-grid">
 					<Link href="./projects/belgravia-mews">
 						<div className="col-1">
