@@ -98,7 +98,7 @@ export default function Page() {
 									className="object-cover"
 								/>
 							</div>
-							<h2 className="text-lg">Monte Carlo, Monaco</h2>
+							<h2 className="text-lg">Victoria, London</h2>
 						</div>
 					</Link>
 				</div>
