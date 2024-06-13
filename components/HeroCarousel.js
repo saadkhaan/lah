@@ -17,12 +17,22 @@ export default function HeroCarousel() {
 			slidesPerView: 1,
 			autoHeight: true,
 			effect: "fade",
+			navigation: true,
 			autoplay: {
 				delay: 5000,
 			},
 			breakpoints: {
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
 				768: {
-					slidesPerView: 1,
+					slidesPerView: 4,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 5,
+					spaceBetween: 50,
 				},
 			},
 		};
@@ -35,12 +45,7 @@ export default function HeroCarousel() {
 	}, []);
 
 	return (
-		<swiper-container
-			init="false"
-			ref={swiperRef}
-			navigation="true"
-			autoHeight={true}
-		>
+		<swiper-container init="false" ref={swiperRef} autoHeight={true}>
 			<swiper-slide>
 				<div className="relative block w-screen h-screen h-screen-mobile">
 					<Image
@@ -50,7 +55,7 @@ export default function HeroCarousel() {
 						fill
 						className="w-full h-full object-cover object-center"
 					/>
-					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						<Link href="/projects/belgravia-mews">Belgravia Mews, London</Link>
 					</p>
 				</div>
@@ -64,7 +69,7 @@ export default function HeroCarousel() {
 						fill
 						className="w-full h-full object-cover object-center"
 					/>
-					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						<Link href="/projects/belgravia-mews">Devon Manor, England</Link>
 					</p>
 				</div>
@@ -78,7 +83,7 @@ export default function HeroCarousel() {
 						fill
 						className="w-full h-full object-cover object-center"
 					/>
-					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						<Link href="/">Elizabeth Street, London</Link>
 					</p>
 				</div>
@@ -92,7 +97,7 @@ export default function HeroCarousel() {
 						fill
 						className="w-full h-full object-cover object-center"
 					/>
-					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						<Link href="/">Jeddah Home, Saudi Arabia</Link>
 					</p>
 				</div>
@@ -106,7 +111,7 @@ export default function HeroCarousel() {
 						fill
 						className="w-full h-full object-cover object-center"
 					/>
-					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						<Link href="/">Monte Carlo, Monaco</Link>
 					</p>
 				</div>
@@ -120,7 +125,7 @@ export default function HeroCarousel() {
 						fill
 						className="w-full h-full object-cover object-center"
 					/>
-					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						<Link href="/">Pont St. London</Link>
 					</p>
 				</div>
@@ -134,7 +139,7 @@ export default function HeroCarousel() {
 						fill
 						className="w-full h-full object-cover object-center"
 					/>
-					<p className="absolute uppercase text-white text-center sm:text-xl bottom-[50%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
+					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
 						<Link href="/">Victoria, London</Link>
 					</p>
 				</div>
