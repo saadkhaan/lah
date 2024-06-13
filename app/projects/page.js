@@ -9,7 +9,7 @@ export default function Page() {
 			<div className="container">
 				{/* <h1 className="text-4xl">Projects</h1> */}
 				<div className="grid grid-cols-3 gap-6 mt-4 projects-grid">
-					<Link href="./projects/belgravia-mews">
+					{/* <Link href="./projects/belgravia-mews">
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
 								<Image
@@ -21,12 +21,12 @@ export default function Page() {
 							</div>
 							<h2 className="text-lg">Belgravia Mews, London</h2>
 						</div>
-					</Link>
+					</Link> */}
 					<Link href="/">
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2">
 								<Image
-									src="/projects/DevonManorEngland/Devon 1.JPG"
+									src="/projects/DevonManorEngland/Devon1.JPG"
 									fill
 									alt="Devon Manor England"
 									className="object-cover"

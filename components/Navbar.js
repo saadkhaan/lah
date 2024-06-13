@@ -10,10 +10,10 @@ export default function Navbar() {
 	const router = useRouter();
 	const currentPath = usePathname();
 	return (
-		<nav className="w-full bg-transparent dark:bg-slate-900 fixed top-0 z-10 ">
+		<nav className="w-full bg-transparent dark:bg-slate-100 fixed top-0 z-20 ">
 			<div className="container mx-auto justify-between px-4 sm:px-0 md:flex md:items-center">
 				<div className="flex items-center justify-between py-3 md:block md:py-5">
-					<div className="w-40 font-black md:text-slate-950 text-2xl dark:text-slate-400">
+					<div className="w-40 font-black md:text-slate-950 text-2xl dark:text-slate-800">
 						<Link href="/">L.A.H</Link>
 					</div>
 					<div className="md:hidden">
