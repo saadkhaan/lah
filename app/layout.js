@@ -34,7 +34,7 @@ export async function metadata({ params, searchParams }, parent) {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="en" suppressHydrationWarning className="scroll-smooth">
 			<body
 				className={`${satoshi.variable} ${manrope.variable} overflow-x-hidden font-body`}
 			>
