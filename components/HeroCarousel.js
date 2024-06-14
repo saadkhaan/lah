@@ -23,15 +23,15 @@ export default function HeroCarousel() {
 			},
 			breakpoints: {
 				640: {
-					slidesPerView: 2,
+					slidesPerView: 1,
 					spaceBetween: 20,
 				},
 				768: {
-					slidesPerView: 4,
+					slidesPerView: 1,
 					spaceBetween: 40,
 				},
 				1024: {
-					slidesPerView: 5,
+					slidesPerView: 1,
 					spaceBetween: 50,
 				},
 			},
