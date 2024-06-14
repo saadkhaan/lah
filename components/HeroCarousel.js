@@ -56,9 +56,7 @@ export default function HeroCarousel() {
 						className="w-full h-full object-cover object-center"
 					/>
 					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						<Link href="/projects/belgravia-mews">
-							Belgravia Mews 1, London
-						</Link>
+						<Link href="/projects/belgravia-mews">Belgravia Mews, London</Link>
 					</p>
 				</div>
 			</swiper-slide>
