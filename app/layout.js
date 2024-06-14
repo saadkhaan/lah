@@ -5,6 +5,7 @@ import Providers from "./providers";
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
 import { createClient } from "@/prismicio";
+import Footer from "@/components/Footer";
 
 const manrope = Manrope({
 	weight: ["400", "500", "600", "700", "800"],
