@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import DarkModeToggle from "./ThemeSwitch";
+import Image from "next/image";
 // import DarkModeToggle from "./DarkModeToggle";
 
 export default function Navbar() {
@@ -13,8 +14,16 @@ export default function Navbar() {
 		<nav className="w-full bg-transparent dark:bg-slate-100 fixed top-0 z-20 ">
 			<div className="container mx-auto justify-between px-4 sm:px-0 md:flex md:items-center">
 				<div className="flex items-center justify-between py-3 md:block md:py-5">
-					<div className="w-40 font-black md:text-slate-950 text-2xl dark:text-slate-800">
-						<Link href="/">L.A.H</Link>
+					<div className="w-20 h-auto md:w-40 font-black md:text-slate-950 text-2xl dark:text-slate-800">
+						<Link href="/">
+							<Image
+								src="/logo.png"
+								width={255}
+								height={0}
+								alt="laith design logo"
+							/>
+							{/* <img src="/logo.svg" /> */}
+						</Link>
 					</div>
 					<div className="md:hidden">
 						<button

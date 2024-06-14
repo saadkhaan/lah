@@ -49,7 +49,7 @@ export default function HeroCarousel() {
 			<swiper-slide>
 				<div className="relative block w-screen h-screen h-screen-mobile">
 					<Image
-						src="/projects/BelgraviaMewsLondon/Mews2.JPG"
+						src="/projects/BelgraviaMewsLondon/Mews2.jpg"
 						alt="a room"
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 100vw"
 						fill
@@ -63,14 +63,14 @@ export default function HeroCarousel() {
 			<swiper-slide>
 				<div className="relative block w-screen h-screen h-screen-mobile">
 					<Image
-						src="/projects/DevonManorEngland/Devon1.JPG"
+						src="/projects/DevonManorEngland/devon1.jpg"
 						alt="a room"
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 100vw"
 						fill
 						className="w-full h-full object-cover object-center"
 					/>
 					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						<Link href="/projects/belgravia-mews">Devon Manor, England</Link>
+						<Link href="/projects/devon-manor">Devon Manor, England</Link>
 					</p>
 				</div>
 			</swiper-slide>
@@ -84,7 +84,9 @@ export default function HeroCarousel() {
 						className="w-full h-full object-cover object-center"
 					/>
 					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						<Link href="/">Elizabeth Street, London</Link>
+						<Link href="/projects/elizabeth-street">
+							Elizabeth Street, London
+						</Link>
 					</p>
 				</div>
 			</swiper-slide>
@@ -98,7 +100,7 @@ export default function HeroCarousel() {
 						className="w-full h-full object-cover object-center"
 					/>
 					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						<Link href="/">Jeddah Home, Saudi Arabia</Link>
+						<Link href="/projects/jeddah-home">Jeddah Home, Saudi Arabia</Link>
 					</p>
 				</div>
 			</swiper-slide>
@@ -112,21 +114,21 @@ export default function HeroCarousel() {
 						className="w-full h-full object-cover object-center"
 					/>
 					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						<Link href="/">Monte Carlo, Monaco</Link>
+						<Link href="/projects/monte-carlo">Monte Carlo, Monaco</Link>
 					</p>
 				</div>
 			</swiper-slide>
 			<swiper-slide>
 				<div className="relative block w-screen h-screen h-screen-mobile">
 					<Image
-						src="/projects/PontStHomeLondon/Pont2.JPG"
+						src="/projects/PontStHomeLondon/Pont2.jpg"
 						alt="a room"
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
 						fill
 						className="w-full h-full object-cover object-center"
 					/>
 					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						<Link href="/">Pont St. London</Link>
+						<Link href="/projects/pont-home">Pont St. London</Link>
 					</p>
 				</div>
 			</swiper-slide>
@@ -140,7 +142,7 @@ export default function HeroCarousel() {
 						className="w-full h-full object-cover object-center"
 					/>
 					<p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-						<Link href="/">Victoria, London</Link>
+						<Link href="/projects/victoria-london">Victoria, London</Link>
 					</p>
 				</div>
 			</swiper-slide>

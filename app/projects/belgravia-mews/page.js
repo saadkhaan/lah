@@ -6,11 +6,11 @@ import { FaChevronDown } from "react-icons/fa6";
 
 export default function page() {
 	return (
-		<div className="px-4 py-20">
+		<div className="px-4 py-56">
 			<div className="relative h-52 md:h-[90svh] hidden sm:block">
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<h1 className="bg-slate-50/50 w-full text-center py-4">
-						Belgravia Mews
+						Belgravia Mews, London
 					</h1>
 					<div class="arrow bounce">
 						<a
@@ -22,7 +22,7 @@ export default function page() {
 					</div>
 				</div>
 				<Image
-					src="/projects/BelgraviaMewsLondon/Mews2.JPG"
+					src="/projects/BelgraviaMewsLondon/Mews2.jpg"
 					fill
 					alt=""
 					className="object-cover"
@@ -30,10 +30,10 @@ export default function page() {
 			</div>
 			<div className="container" id="project-details">
 				<div className="grid md:grid-cols-2 mt-8 gap-8">
-					<h1 className="sm:hidden">Belgravia Mews</h1>
+					<h1 className="sm:hidden">Belgravia Mews, London</h1>
 					<div className="project-image-container">
 						<Image
-							src="/projects/BelgraviaMewsLondon/Mews2.JPG"
+							src="/projects/BelgraviaMewsLondon/Mews2.jpg"
 							width={800}
 							height={0}
 							alt=""
@@ -42,7 +42,7 @@ export default function page() {
 					</div>
 					<div className="project-image-container">
 						<Image
-							src="/projects/BelgraviaMewsLondon/Mews3.JPG"
+							src="/projects/BelgraviaMewsLondon/Mews3.jpg"
 							width={800}
 							height={0}
 							alt=""
@@ -51,7 +51,7 @@ export default function page() {
 					</div>
 					<div className="project-image-container">
 						<Image
-							src="/projects/BelgraviaMewsLondon/Mews6.JPG"
+							src="/projects/BelgraviaMewsLondon/Mews6.jpg"
 							width={800}
 							height={0}
 							alt=""
@@ -60,7 +60,7 @@ export default function page() {
 					</div>
 					<div className="project-image-container">
 						<Image
-							src="/projects/BelgraviaMewsLondon/Mews7.JPG"
+							src="/projects/BelgraviaMewsLondon/Mews7.jpg"
 							width={800}
 							height={0}
 							alt=""
@@ -69,7 +69,7 @@ export default function page() {
 					</div>
 					<div className="project-image-container">
 						<Image
-							src="/projects/BelgraviaMewsLondon/Mews8.JPG"
+							src="/projects/BelgraviaMewsLondon/Mews8.jpg"
 							width={800}
 							height={0}
 							alt=""
@@ -78,7 +78,7 @@ export default function page() {
 					</div>
 					<div className="project-image-container">
 						<Image
-							src="/projects/BelgraviaMewsLondon/Mews9.JPG"
+							src="/projects/BelgraviaMewsLondon/Mews9.jpg"
 							width={800}
 							height={0}
 							alt=""
@@ -90,7 +90,7 @@ export default function page() {
 				<div className="next-project my-20">
 					<h3 className="md:text-3xl text-slate-400 hover:text-slate-950 font-bold flex justify-end">
 						<Link
-							href="/"
+							href="../projects/devon-manor"
 							className="inline-flex items-center group transition-all transform mr-2"
 						>
 							Next project: Devon Manor, England{" "}

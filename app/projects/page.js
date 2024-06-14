@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Page() {
 	return (
-		<div className="py-32 px-4">
+		<div className="px-4 py-40 md:py-96">
 			<div className="container">
 				<h1 className="text-4xl">Projects</h1>
 				<div className="grid md:grid-cols-3 gap-6 mt-4 projects-grid">
@@ -13,7 +13,7 @@ export default function Page() {
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
-									src="/projects/BelgraviaMewsLondon/Mews2.JPG"
+									src="/projects/BelgraviaMewsLondon/Mews2.jpg"
 									fill
 									alt="Belgravia Mews London"
 									className="object-cover"
@@ -22,11 +22,11 @@ export default function Page() {
 							<h2 className="text-lg">Belgravia Mews, London</h2>
 						</div>
 					</Link>
-					<Link href="/">
+					<Link href="./projects/devon-manor">
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
-									src="/projects/DevonManorEngland/Devon1.JPG"
+									src="/projects/DevonManorEngland/devon1.jpg"
 									fill
 									alt="Devon Manor England"
 									className="object-cover"
@@ -35,7 +35,7 @@ export default function Page() {
 							<h2 className="text-lg">Devon Manor, England</h2>
 						</div>
 					</Link>
-					<Link href="/">
+					<Link href="./projects/elizabeth-street">
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
@@ -48,7 +48,7 @@ export default function Page() {
 							<h2 className="text-lg">Elizabeth Street, London</h2>
 						</div>
 					</Link>
-					<Link href="/">
+					<Link href="./projects/jeddah-home">
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
@@ -61,7 +61,7 @@ export default function Page() {
 							<h2 className="text-lg">Jeddah Home, Saudi Arabia</h2>
 						</div>
 					</Link>
-					<Link href="/">
+					<Link href="./projects/monte-carlo">
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
@@ -74,11 +74,11 @@ export default function Page() {
 							<h2 className="text-lg">Monte Carlo, Monaco</h2>
 						</div>
 					</Link>
-					<Link href="/">
+					<Link href="./projects/pont-home">
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
-									src="/projects/PontStHomeLondon/Pont2.JPG"
+									src="/projects/PontStHomeLondon/Pont2.jpg"
 									fill
 									alt="Pont St. Home, London"
 									className="object-cover"
@@ -88,7 +88,7 @@ export default function Page() {
 						</div>
 					</Link>
 
-					<Link href="/">
+					<Link href="./projects/victoria-london">
 						<div className="col-1">
 							<div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
 								<Image
