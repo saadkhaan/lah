@@ -18,6 +18,7 @@ export default function HeroCarousel() {
 			autoHeight: true,
 			effect: "fade",
 			navigation: true,
+			loop: true,
 			autoplay: {
 				delay: 5000,
 			},
