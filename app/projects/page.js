@@ -1,12 +1,13 @@
 // import { useRouter } from "next/navigation";
 
+import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
 	return (
-		<div className="px-4 py-40 md:py-64">
-			<div className="container">
+		<div className="px-4 md:pt-64">
+			<div className="container mb-8">
 				<h1 className="text-4xl">Projects</h1>
 				<div className="grid md:grid-cols-3 gap-6 mt-4 projects-grid">
 					<Link href="./projects/belgravia-mews">
@@ -103,6 +104,7 @@ export default function Page() {
 					</Link>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }

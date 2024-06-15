@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Providers from "./providers";
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
-import { createClient } from "@/prismicio";
+// import { createClient } from "@/prismicio";
 import Footer from "@/components/Footer";
 
 const manrope = Manrope({
@@ -20,18 +20,18 @@ const satoshi = localFont({
 	variable: "--font-satoshi",
 });
 
-export async function metadata({ params, searchParams }, parent) {
-	const client = createClient();
-	const settings = await client.getSingle("settings");
+// export async function metadata({ params, searchParams }, parent) {
+// 	const client = createClient();
+// 	const settings = await client.getSingle("settings");
 
-	return {
-		title: settings.data.meta_title || "Laith AbdelHadi",
-		description: settings.data.meta_description || "Laith AbdelHadi",
-		// openGraph: {
-		// 	images: ["/some-specific-page-image.jpg", ...previousImages],
-		// },
-	};
-}
+// 	return {
+// 		title: settings.data.meta_title || "Laith AbdelHadi",
+// 		description: settings.data.meta_description || "Laith AbdelHadi",
+// 		// openGraph: {
+// 		// 	images: ["/some-specific-page-image.jpg", ...previousImages],
+// 		// },
+// 	};
+// }
 
 export default function RootLayout({ children }) {
 	return (

@@ -1,14 +1,14 @@
 // import React from "react";
 // import coverImage from "../public/cover.jpg";
 import HeroCarousel from "@/components/HeroCarousel";
-import { SliceZone } from "@prismicio/react";
+// import { SliceZone } from "@prismicio/react";
 
-import { createClient } from "@/prismicio";
-import { components } from "@/slices";
+// import { createClient } from "@/prismicio";
+// import { components } from "@/slices";
 
 export default async function Home() {
-	const client = createClient();
-	const page = await client.getSingle("homepage");
+	// const client = createClient();
+	// const page = await client.getSingle("homepage");
 
 	// return <SliceZone slices={page.data.slices} components={components} />;
 	return (
@@ -23,12 +23,12 @@ export default async function Home() {
 	);
 }
 
-export async function generateMetadata() {
-	const client = createClient();
-	const page = await client.getSingle("homepage");
+// export async function generateMetadata() {
+// 	const client = createClient();
+// 	const page = await client.getSingle("homepage");
 
-	return {
-		title: page.data.meta_title,
-		description: page.data.meta_description,
-	};
-}
+// 	return {
+// 		title: page.data.meta_title,
+// 		description: page.data.meta_description,
+// 	};
+// }
