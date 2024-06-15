@@ -20,6 +20,11 @@ const satoshi = localFont({
 	variable: "--font-satoshi",
 });
 
+export const metadata = {
+  title: 'Laith AbdelHadi Interior Designer',
+  description: 'A passionate Interior Designer in UAE, London, and, Saudi Arabia',
+}
+
 // export async function metadata({ params, searchParams }, parent) {
 // 	const client = createClient();
 // 	const settings = await client.getSingle("settings");
