@@ -15,6 +15,7 @@ module.exports = {
 			fontFamily: {
 				heading: ["var(--font-satoshi)"],
 				body: ["var(--font-manrope)"],
+				banner: ["var(--font-cg)"],
 			},
 			backgroundImage: {
 				"hero-cover": "url('/cover.jpg')",

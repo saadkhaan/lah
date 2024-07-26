@@ -20,10 +20,18 @@ const satoshi = localFont({
 	variable: "--font-satoshi",
 });
 
+const cg = localFont({
+	src: "../public/fonts/CentGothWGL.woff2",
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-cg",
+});
+
 export const metadata = {
-  title: 'Laith AbdelHadi Interior Designer',
-  description: 'A passionate Interior Designer in UAE, London, and, Saudi Arabia',
-}
+	title: "Laith AbdelHadi Interior Designer",
+	description:
+		"A passionate Interior Designer in UAE, London, and, Saudi Arabia",
+};
 
 // export async function metadata({ params, searchParams }, parent) {
 // 	const client = createClient();
@@ -42,7 +50,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" suppressHydrationWarning className="scroll-smooth">
 			<body
-				className={`${satoshi.variable} ${manrope.variable} overflow-x-hidden font-body`}
+				className={`${satoshi.variable} ${manrope.variable} ${cg.variable} overflow-x-hidden font-body`}
 			>
 				<Providers>
 					<Navbar />
