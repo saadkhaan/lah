@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa6";
 
 export default function page() {
 	return (
-		<div className="px-4 pt-56">
+		<div className="px-4 project-top">
 			<div className="relative h-52 md:h-[90svh] hidden sm:block">
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<h1 className="bg-slate-50/50 w-full text-center py-4">

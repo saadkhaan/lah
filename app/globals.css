@@ -38,6 +38,10 @@
     nav li {
         @apply uppercase text-lg text-slate-800 font-semibold md:text-slate-950 hover:text-slate-500 dark:text-slate-800 dark:hover:text-slate-500
     }
+
+        .project-top {
+            @apply mt-40 sm:mt-56
+        }
 }
 
 .arrow {
