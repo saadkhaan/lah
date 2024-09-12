@@ -15,7 +15,7 @@ export default function page() {
 						<h1 className="bg-slate-50/50 w-full text-center py-4">
 							Elizabeth Street, London
 						</h1>
-						<div class="arrow bounce">
+						<div className="arrow bounce">
 							<a
 								href="#project-details"
 								className="bg-slate-50/60 hover:bg-slate-50 transition-all duration-300"
