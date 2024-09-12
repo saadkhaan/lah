@@ -18,6 +18,11 @@ export default async function Home() {
 					{/* <SliceZone slices={page.data.slices} components={components} /> */}
 					<HeroCarousel />
 				</section>
+				<div className="bg-white/75 py-4 text-center px-2 bottom-0 fixed w-full z-20 backdrop-blur-sm dark:bg-slate-400/75 dark:z-30">
+					<p className="text-slate-900 dark:text-white text-xl font-banner">
+						Website under construction
+					</p>
+				</div>
 			</main>
 		</>
 	);

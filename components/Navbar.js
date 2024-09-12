@@ -12,11 +12,6 @@ export default function Navbar() {
 	const currentPath = usePathname();
 	return (
 		<>
-			<div className="bg-white/75 py-4 text-center fixed w-full z-20 backdrop-blur-sm dark:bg-slate-400/75 dark:z-30">
-				<p className="text-slate-900 dark:text-white text-xl font-banner">
-					Website under construction
-				</p>
-			</div>
 			<nav className="w-full bg-transparent dark:bg-slate-100 fixed top-0 z-20 ">
 				<div className="container mx-auto justify-between px-4 sm:px-0 md:flex md:items-center">
 					<div className="flex items-center justify-between py-3 md:block md:py-5">

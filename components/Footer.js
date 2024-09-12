@@ -13,9 +13,11 @@ export default function Footer() {
 						<a href="tel:+971562273883">(+971)56-227-3883</a>
 					</li>
 				</ul>
-				{/* <p className="text-sm text-slate-400">
-					© {new Date().getFullYear()} Royal Eagle FZ LLC. All rights reserved.
-				</p> */}
+			</div>
+			<div className="bg-white/75 py-4 text-center px-2 bottom-0 fixed w-full z-20 backdrop-blur-sm dark:bg-slate-400/75 dark:z-30">
+				<p className="text-slate-900 dark:text-white text-xl font-banner">
+					Website under construction
+				</p>
 			</div>
 		</footer>
 	);
