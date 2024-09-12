@@ -71,8 +71,8 @@ export default function Navbar() {
 							navbar ? "block" : "hidden"
 						}`}
 					>
-						<ul className="items-center justify-end space-y-8 md:flex md:space-x-10 md:space-y-0">
-							<li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
+						<ul className="items-center justify-end space-y-4 md:flex md:space-x-10 md:space-y-0">
+							<li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
 								<Link
 									href="/"
 									className={currentPath.pathname == "/" ? "active" : ""}
@@ -84,14 +84,14 @@ export default function Navbar() {
 
 							{/* <li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
 							<Link
-								href="/services"
-								className={currentPath.pathname == "/services" ? "active" : ""}
-								onClick={() => setNavbar(false)}
-							>
-								About
-							</Link>
-						</li> */}
-							<li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
+									href="/services"
+									className={currentPath.pathname == "/services" ? "active" : ""}
+									onClick={() => setNavbar(false)}
+								>
+									About
+								</Link>
+							</li> */}
+							<li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
 								<Link
 									href="/projects"
 									className={
@@ -102,7 +102,7 @@ export default function Navbar() {
 									projects
 								</Link>
 							</li>
-							<li className="bg-slate-100 p-3 sm:bg-transparent sm:p-0">
+							<li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
 								<Link
 									href="/contact"
 									className={currentPath.pathname == "/contact" ? "active" : ""}
