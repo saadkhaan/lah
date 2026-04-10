@@ -15,7 +15,7 @@ export default function Navbar() {
       <nav className="w-full bg-transparent fixed top-0 z-20 ">
         <div className="container mx-auto justify-between px-4 sm:px-0 md:flex md:items-center">
           <div className="flex items-center justify-between py-3 md:block md:py-5">
-            <div className="w-20 h-auto md:w-40 font-black md:text-slate-950 text-2xl dark:text-slate-800">
+            <div className="w-20 h-auto md:w-40 font-black md:text-slate-950 text-2xl">
               <Link href="/">
                 <Image
                   src="/logo.png"
@@ -35,7 +35,7 @@ export default function Navbar() {
                 {navbar ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-slate-800 dark:text-slate-800"
+                    className="h-6 w-6 text-slate-800"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -48,7 +48,7 @@ export default function Navbar() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-slate-800 dark:text-slate-800"
+                    className="h-6 w-6 text-slate-800"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
