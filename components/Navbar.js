@@ -12,7 +12,7 @@ export default function Navbar() {
   const currentPath = usePathname();
   return (
     <>
-      <nav className="w-full bg-transparent fixed top-0 z-20 ">
+      <nav className="w-full bg-transparent top-0 z-20 ">
         <div className="container mx-auto justify-between px-4 sm:px-0 md:flex md:items-center">
           <div className="flex items-center justify-between py-3 md:block md:py-5">
             <div className="w-20 h-auto md:w-40 font-black md:text-slate-950 text-2xl">
@@ -104,6 +104,15 @@ export default function Navbar() {
               </li>
               <li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
                 <Link
+                  href="/bio"
+                  className={currentPath.pathname == "/bio" ? "active" : ""}
+                  onClick={() => setNavbar(false)}
+                >
+                  Bio
+                </Link>
+              </li>
+              <li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
+                <Link
                   href="/contact"
                   className={currentPath.pathname == "/contact" ? "active" : ""}
                   onClick={() => setNavbar(false)}
@@ -111,6 +120,7 @@ export default function Navbar() {
                   Contact
                 </Link>
               </li>
+
               <div className="flex items-center justify-between md:gap-4">
                 {/* <li className="group rounded-md border border-slate-200 bg-white text-slate-800 transition-all duration-200 hover:bg-green-500 dark:border-none dark:bg-green-600">
 									<Link href="/contact" legacyBehavior>

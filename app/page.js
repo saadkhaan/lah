@@ -19,7 +19,7 @@ export default async function Home() {
           <HeroCarousel />
         </section>
         <div className="bg-white py-4 text-center px-2 bottom-0 fixed w-full z-20 backdrop-blur-sm ">
-          <p className="text-slate-900 dark:text-white text-xl font-banner">
+          <p className="text-slate-900 text-xl font-banner">
             Website under construction
           </p>
         </div>

@@ -3,11 +3,11 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="bg-slate-100 dark:bg-slate-800">
+    <div className="bg-white">
       {/* <div class="container">
         <h1 className="text-4xl">Contact</h1>
       </div> */}
-      <div className="grid md:grid-cols-2 items-center gap-8 px-4 py-40 sm:px-0 sm:py-0">
+      <div className="grid md:grid-cols-2 items-center gap-8 px-4 sm:px-0 sm:py-0">
         <div className="w-full h-52 md:h-screen relative">
           <Image
             src="/projects/BelgraviaMewsLondon/Mews2.jpg"
@@ -18,7 +18,7 @@ export default function page() {
         </div>
         <div>
           <h1 className="text-4xl mb-8">Contact</h1>
-          <ul className="space-y-4 text-gray-900 dark:text-gray-400">
+          <ul className="space-y-4 text-gray-900 ">
             <li className="hover:underline text-2xl font-semibold">
               <a href="mailto:laith@laithdesign.com">laith@laithdesign.com</a>
             </li>
