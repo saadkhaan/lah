@@ -17,7 +17,7 @@ export default function page() {
           />
         </div>
         <div className="pr-32 py-8">
-          <h1 className="text-4xl mb-8">Bio</h1>
+          <h1 className="text-4xl mb-8 text-gray-900">Bio</h1>
           <p className="text-gray-900 text-lg">
             Laith is an architect and designer with a passion for creating
             timeless and elegant spaces. With over a decade of experience in the
