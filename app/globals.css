@@ -20,12 +20,12 @@
 
 @layer components {
   body {
-    /* @apply dark:bg-slate-50; */
+    @apply bg-white;
   }
   h1,
   h2,
   h3 {
-    @apply font-heading ;
+    @apply font-heading;
   }
   h1 {
     @apply font-black text-4xl sm:text-6xl;
@@ -37,7 +37,7 @@
     @apply text-slate-500 tracking-wide;
   }
   nav li {
-    @apply uppercase text-lg text-slate-800 font-semibold md:text-slate-950 hover:text-slate-500 ;
+    @apply uppercase text-lg text-slate-800 font-semibold md:text-slate-950 hover:text-slate-500;
   }
 
   .project-top {
