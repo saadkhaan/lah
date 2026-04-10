@@ -43,6 +43,10 @@
   .project-top {
     @apply mt-40 sm:mt-56;
   }
+
+  .projects-grid a {
+    @apply text-gray-900;
+  }
 }
 
 .arrow {
