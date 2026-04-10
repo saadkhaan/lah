@@ -133,9 +133,9 @@ export default function Navbar() {
 										</a>
 									</Link>
 								</li> */}
-                <li className="hidden sm:block">
+                {/* <li className="hidden sm:block">
                   <DarkModeToggle />
-                </li>
+                </li> */}
               </div>
             </ul>
           </div>
