@@ -2,7 +2,7 @@
 // import coverImage from "../public/cover.jpg";
 import HeroCarousel from "@/components/HeroCarousel";
 // import { SliceZone } from "@prismicio/react";
-
+<link rel="icon" href="/favicon.png" sizes="any" />;
 // import { createClient } from "@/prismicio";
 // import { components } from "@/slices";
 
