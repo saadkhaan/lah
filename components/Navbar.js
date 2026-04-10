@@ -28,7 +28,7 @@ export default function Navbar() {
             </div>
             <div className="md:hidden">
               <button
-                className="mr-4 rounded-md p-2 text-slate-800 outline-none focus:border focus:border-slate-400 dark:text-slate-300"
+                className="mr-4 rounded-md p-2 text-slate-800 outline-none focus:border focus:border-slate-400"
                 aria-label="Toggle Main Navigation"
                 onClick={() => setNavbar((prev) => !prev)}
               >
@@ -63,7 +63,7 @@ export default function Navbar() {
                 )}
               </button>
 
-              <DarkModeToggle />
+              {/* <DarkModeToggle /> */}
             </div>
           </div>
           <div
