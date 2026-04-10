@@ -10,7 +10,7 @@ export default function page() {
       <div className="grid md:grid-cols-2 items-center gap-8 px-4 sm:px-0 sm:py-0">
         <div className="w-full h-52 md:h-screen relative">
           <Image
-            src="/laith-photo.jpg"
+            src="/Laith-photo.jpg"
             alt
             fill
             className="w-full h-full object-cover"
