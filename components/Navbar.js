@@ -120,33 +120,6 @@ export default function Navbar() {
                   Contact
                 </Link>
               </li>
-
-              <div className="flex items-center justify-between md:gap-4">
-                {/* <li className="group rounded-md border border-slate-200 bg-white text-slate-800 transition-all duration-200 hover:bg-green-500 dark:border-none dark:bg-green-600">
-									<Link href="/contact" legacyBehavior>
-										<a className="flex items-center space-x-2 px-6 py-3 transition-all duration-200 hover:shadow-xl group-hover:text-white dark:text-slate-50">
-											<span>Start a Project</span>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												strokeWidth={1.5}
-												stroke="currentColor"
-												className="h-6 w-6"
-											>
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-												/>
-											</svg>
-										</a>
-									</Link>
-								</li> */}
-                {/* <li className="hidden sm:block">
-                  <DarkModeToggle />
-                </li> */}
-              </div>
             </ul>
           </div>
         </div>

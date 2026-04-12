@@ -14,7 +14,7 @@ export default function Page() {
             <div className="col-1">
               <div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
                 <Image
-                  src="/projects/BelgraviaMewsLondon/Mews2.jpg"
+                  src="/projects/BelgraviaMewsLondon/Mews9.jpg"
                   fill
                   alt="Belgravia Mews London"
                   className="object-cover"

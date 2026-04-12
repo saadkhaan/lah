@@ -143,11 +143,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white/75 py-4 text-center px-2 bottom-0 fixed z-20 backdrop-blur-sm dark:bg-slate-400/75 dark:z-30">
-        <p className="text-slate-900 dark:text-white text-xl font-banner">
-          Website under construction
-        </p>
-      </div>
+
       <Footer />
     </>
   );
