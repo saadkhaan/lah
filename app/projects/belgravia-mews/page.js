@@ -78,7 +78,7 @@ export default function page() {
                 className="mx-auto"
               />
             </div>
-            <div className="project-image-container">
+            {/* <div className="project-image-container">
               <Image
                 src="/projects/BelgraviaMewsLondon/Mews2.jpg"
                 width={800}
@@ -86,7 +86,7 @@ export default function page() {
                 alt=""
                 className="mx-auto"
               />
-            </div>
+            </div> */}
           </div>
 
           <div className="next-project my-20">
