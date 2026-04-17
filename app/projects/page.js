@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="px-4 pt-40 md:pt-0">
+    <div className="px-4 md:pt-0">
       <div className="container mb-8">
         <h1 className="text-4xl text-gray-900">Projects</h1>
         <div className="grid md:grid-cols-3 gap-6 mt-4 projects-grid">
