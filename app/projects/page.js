@@ -62,6 +62,19 @@ export default function Page() {
               <h2 className="text-lg">Jeddah Home, Saudi Arabia</h2>
             </div>
           </Link>
+          <Link href="./projects/jeddah-home-v2">
+            <div className="col-1">
+              <div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
+                <Image
+                  src="/projects/JeddahHomeSaudiArabia-v2/MAIN-ENTRANCE-LOBBY-V1.png"
+                  fill
+                  alt="Jeddah Home"
+                  className="object-cover"
+                />
+              </div>
+              <h2 className="text-lg">Jeddah Home, Saudi Arabia</h2>
+            </div>
+          </Link>
           <Link href="./projects/monte-carlo">
             <div className="col-1">
               <div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
@@ -75,7 +88,7 @@ export default function Page() {
               <h2 className="text-lg">Monte Carlo, Monaco</h2>
             </div>
           </Link>
-          <Link href="./projects/pont-home">
+          {/* <Link href="./projects/pont-home">
             <div className="col-1">
               <div className="h-72 image-container relative mb-2  md:hover:shadow-xl duration-300 transition-shadow shadow-slate-950">
                 <Image
@@ -87,7 +100,7 @@ export default function Page() {
               </div>
               <h2 className="text-lg">Pont St. Home, London</h2>
             </div>
-          </Link>
+          </Link> */}
 
           <Link href="./projects/victoria-london">
             <div className="col-1">
