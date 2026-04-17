@@ -41,7 +41,7 @@
   }
 
   .project-top {
-    @apply mt-40 sm:mt-0;
+    @apply sm:mt-0;
   }
   .project-top h1 {
     @apply text-gray-900;
