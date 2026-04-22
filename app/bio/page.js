@@ -8,14 +8,13 @@ export default function page() {
         <h1 className="text-4xl">Contact</h1>
       </div> */}
       <div className="grid md:grid-cols-2 items-center gap-8 px-4 sm:px-0 sm:py-0">
-        <div className="w-full h-auto md:h-screen relative">
+        <div className="w-full h-full md:h-screen relative">
           <Image
             src="/Laith-photo.jpg"
             quality={70}
             alt
             width={1000}
             height={600}
-            className="w-full h-full"
           />
         </div>
         <div className="mb-20 md:mb-0 md:mr-40">
