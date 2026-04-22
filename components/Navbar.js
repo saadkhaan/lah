@@ -15,7 +15,7 @@ export default function Navbar() {
       <nav className="w-full bg-transparent top-0 z-20 ">
         <div className="container mx-auto justify-between px-4 sm:px-0 md:flex md:items-center">
           <div className="flex items-center justify-between py-3 md:block md:py-5">
-            <div className="w-20 h-auto md:w-40 font-black md:text-slate-950 text-2xl">
+            <div className="w-32 h-auto md:w-40 font-black md:text-slate-950 text-2xl">
               <Link href="/">
                 <Image
                   src="/logo.png"
@@ -74,11 +74,11 @@ export default function Navbar() {
             <ul className="items-center justify-end space-y-4 md:flex md:space-x-10 md:space-y-0">
               <li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
                 <Link
-                  href="/"
+                  href="/bio"
                   className={currentPath.pathname == "/" ? "active" : ""}
                   onClick={() => setNavbar(false)}
                 >
-                  /
+                  About
                 </Link>
               </li>
 
@@ -102,7 +102,7 @@ export default function Navbar() {
                   projects
                 </Link>
               </li>
-              <li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
+              {/* <li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
                 <Link
                   href="/bio"
                   className={currentPath.pathname == "/bio" ? "active" : ""}
@@ -110,7 +110,7 @@ export default function Navbar() {
                 >
                   Bio
                 </Link>
-              </li>
+              </li> */}
               <li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
                 <Link
                   href="/contact"
