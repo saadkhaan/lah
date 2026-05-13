@@ -38,13 +38,13 @@ export default function page() {
             aesthetic, where spaces are composed with depth, atmosphere, and a
             sense of narrative.
           </p>
-          <p className="text-gray-900 text-lg mt-4">
+          {/* <p className="text-gray-900 text-lg mt-4">
             Today, Laith approaches each project as a personal story, working
             closely with clients to create interiors that reflect their
             lifestyle and identity. His designs balance structure and
             spontaneity, blending classic influences with contemporary living to
             achieve spaces that are warm, elegant, and enduring.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
