@@ -12,10 +12,10 @@ export default function Navbar() {
   const currentPath = usePathname();
   return (
     <>
-      <nav className="w-full bg-transparent dark:bg-slate-900 fixed top-0 z-20 ">
+      <nav className="w-full bg-white top-0 z-20 fixed sm:px-4">
         <div className="container mx-auto justify-between px-4 sm:px-0 md:flex md:items-center">
           <div className="flex items-center justify-between py-3 md:block md:py-5">
-            <div className="w-20 h-auto md:w-40 font-black md:text-slate-950 text-2xl dark:text-slate-800">
+            <div className="w-32 h-auto md:w-40 font-black md:text-slate-950 text-2xl">
               <Link href="/">
                 <Image
                   src="/logo.png"
@@ -28,14 +28,14 @@ export default function Navbar() {
             </div>
             <div className="md:hidden">
               <button
-                className="mr-4 rounded-md p-2 text-slate-800 outline-none focus:border focus:border-slate-400 dark:text-slate-300"
+                className="rounded-md p-2 text-slate-800 outline-none focus:border focus:border-slate-400"
                 aria-label="Toggle Main Navigation"
                 onClick={() => setNavbar((prev) => !prev)}
               >
                 {navbar ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-slate-800 dark:text-slate-800"
+                    className="h-6 w-6 text-slate-800"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -48,7 +48,7 @@ export default function Navbar() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-slate-800 dark:text-slate-800"
+                    className="h-6 w-6 text-slate-800"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -63,7 +63,7 @@ export default function Navbar() {
                 )}
               </button>
 
-              <DarkModeToggle />
+              {/* <DarkModeToggle /> */}
             </div>
           </div>
           <div
@@ -74,11 +74,11 @@ export default function Navbar() {
             <ul className="items-center justify-end space-y-4 md:flex md:space-x-10 md:space-y-0">
               <li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
                 <Link
-                  href="/"
+                  href="/bio"
                   className={currentPath.pathname == "/" ? "active" : ""}
                   onClick={() => setNavbar(false)}
                 >
-                  /
+                  About
                 </Link>
               </li>
 
@@ -102,6 +102,15 @@ export default function Navbar() {
                   projects
                 </Link>
               </li>
+              {/* <li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
+                <Link
+                  href="/bio"
+                  className={currentPath.pathname == "/bio" ? "active" : ""}
+                  onClick={() => setNavbar(false)}
+                >
+                  Bio
+                </Link>
+              </li> */}
               <li className="bg-slate-950 text-white sm:text-slate-800 p-3 sm:bg-transparent sm:p-0">
                 <Link
                   href="/contact"
@@ -111,32 +120,6 @@ export default function Navbar() {
                   Contact
                 </Link>
               </li>
-              <div className="flex items-center justify-between md:gap-4">
-                {/* <li className="group rounded-md border border-slate-200 bg-white text-slate-800 transition-all duration-200 hover:bg-green-500 dark:border-none dark:bg-green-600">
-									<Link href="/contact" legacyBehavior>
-										<a className="flex items-center space-x-2 px-6 py-3 transition-all duration-200 hover:shadow-xl group-hover:text-white dark:text-slate-50">
-											<span>Start a Project</span>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												strokeWidth={1.5}
-												stroke="currentColor"
-												className="h-6 w-6"
-											>
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-												/>
-											</svg>
-										</a>
-									</Link>
-								</li> */}
-                <li className="hidden sm:block">
-                  <DarkModeToggle />
-                </li>
-              </div>
             </ul>
           </div>
         </div>

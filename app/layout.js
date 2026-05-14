@@ -8,29 +8,32 @@ import localFont from "next/font/local";
 import Footer from "@/components/Footer";
 
 const manrope = Manrope({
-	weight: ["400", "500", "600", "700", "800"],
-	subsets: ["latin"],
-	variable: "--font-manrope",
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-manrope",
 });
 
 const satoshi = localFont({
-	src: "../public/fonts/Satoshi-Variable.woff2",
-	subsets: ["latin"],
-	display: "swap",
-	variable: "--font-satoshi",
+  src: "../public/fonts/Satoshi-Variable.woff2",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-satoshi",
 });
 
 const cg = localFont({
-	src: "../public/fonts/CentGothWGL.woff2",
-	subsets: ["latin"],
-	display: "swap",
-	variable: "--font-cg",
+  src: "../public/fonts/CentGothWGL.woff2",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-cg",
 });
 
 export const metadata = {
-	title: "Laith AbdelHadi Interior Designer",
-	description:
-		"A passionate Interior Designer in UAE, London, and, Saudi Arabia",
+  title: "Laith AbdelHadi Interior Designer",
+  description:
+    "A passionate Interior Designer in UAE, London, and, Saudi Arabia",
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+  },
 };
 
 // export async function metadata({ params, searchParams }, parent) {
@@ -47,16 +50,16 @@ export const metadata = {
 // }
 
 export default function RootLayout({ children }) {
-	return (
-		<html lang="en" suppressHydrationWarning className="scroll-smooth">
-			<body
-				className={`${satoshi.variable} ${manrope.variable} ${cg.variable} overflow-x-hidden font-body`}
-			>
-				<Providers>
-					<Navbar />
-					{children}
-				</Providers>
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <body
+        className={`${satoshi.variable} ${manrope.variable} ${cg.variable} overflow-x-hidden font-body`}
+      >
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
+      </body>
+    </html>
+  );
 }

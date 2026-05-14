@@ -13,7 +13,7 @@ export default function page() {
         <div className="relative h-52 md:h-[90svh] hidden sm:block">
           <div className="relative z-10 h-full flex items-center justify-center">
             <h1 className="bg-slate-50/50 w-full text-center py-4">
-              Jeddah Home, Saudi Arabia
+              Jeddah Corniche, Saudi Arabia
             </h1>
             <div class="arrow bounce">
               <a
@@ -25,7 +25,7 @@ export default function page() {
             </div>
           </div>
           <Image
-            src="/projects/JeddahHomeSaudiArabia/JeddahHome0.png"
+            src="/projects/JeddahHomeSaudiArabia-v2/MAIN-ENTRANCE-LOBBY-V1.png"
             fill
             alt=""
             className="object-cover"
@@ -33,10 +33,10 @@ export default function page() {
         </div>
         <div className="container" id="project-details">
           <div className="grid md:grid-cols-2 mt-8 gap-8">
-            <h1 className="sm:hidden">Jeddah Home, Saudi Arabia</h1>
+            <h1 className="sm:hidden">Jeddah Corniche, Saudi Arabia</h1>
             <div className="project-image-container">
               <Image
-                src="/projects/JeddahHomeSaudiArabia/JeddahHome0.png"
+                src="/projects/JeddahHomeSaudiArabia-v2/MAIN-LOBBY-V2.png"
                 width={800}
                 height={0}
                 alt=""
@@ -45,7 +45,7 @@ export default function page() {
             </div>
             <div className="project-image-container">
               <Image
-                src="/projects/JeddahHomeSaudiArabia/JeddahHome1.png"
+                src="/projects/JeddahHomeSaudiArabia-v2/MANCAVE-V2.png"
                 width={800}
                 height={0}
                 alt=""
@@ -54,7 +54,7 @@ export default function page() {
             </div>
             <div className="project-image-container">
               <Image
-                src="/projects/JeddahHomeSaudiArabia/JeddahHome2.png"
+                src="/projects/JeddahHomeSaudiArabia-v2/MANCAVE-V4.png"
                 width={800}
                 height={0}
                 alt=""
@@ -63,7 +63,7 @@ export default function page() {
             </div>
             <div className="project-image-container">
               <Image
-                src="/projects/JeddahHomeSaudiArabia/JeddahHome3.png"
+                src="/projects/JeddahHomeSaudiArabia-v2/BAR-STAIRCASE-V1.png"
                 width={800}
                 height={0}
                 alt=""
@@ -72,7 +72,7 @@ export default function page() {
             </div>
             <div className="project-image-container">
               <Image
-                src="/projects/JeddahHomeSaudiArabia/JeddahHome4.png"
+                src="/projects/JeddahHomeSaudiArabia-v2/BAR-STAIRCASE-V2.png"
                 width={800}
                 height={0}
                 alt=""
@@ -81,7 +81,97 @@ export default function page() {
             </div>
             <div className="project-image-container">
               <Image
-                src="/projects/JeddahHomeSaudiArabia/JeddahHome5.png"
+                src="/projects/JeddahHomeSaudiArabia-v2/DINING-AREA-V1-OPT-1.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/DINING-AREA-V2-OPT1.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/FAMILY-SITTING-V1-OPT2.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/FAMILY-SITTING-V2-OPT2.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/FORMAL-LOUNGE-V1.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/FORMAL-LOUNGE-V2.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/FORMAL-LOUNGE-V3.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/MASTERSUIT-HALL-V1.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/MASTERSUIT-V1.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/MASTERSUIT-V2.png"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/JeddahHomeSaudiArabia-v2/MASTERSUIT-V3.png"
                 width={800}
                 height={0}
                 alt=""
