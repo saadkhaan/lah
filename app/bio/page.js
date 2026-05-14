@@ -18,7 +18,7 @@ export default function page() {
           />
         </div>
         <div className="mb-20 md:mb-0 md:mr-40">
-          <h1 className="text-4xl mb-8 text-gray-900">Bio</h1>
+          <h1 className="text-4xl mb-8 text-gray-900">About</h1>
           <p className="text-gray-900 text-lg">
             Laith Abdelhadi is a Dubai-based interior designer with over two
             decades of experience creating refined, deeply personal spaces

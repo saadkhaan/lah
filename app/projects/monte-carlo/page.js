@@ -43,6 +43,7 @@ export default function page() {
                 className="mx-auto"
               />
             </div>
+            
 
             <div className="project-image-container">
               <Image
@@ -89,6 +90,33 @@ export default function page() {
                 className="mx-auto object-cover"
               />
             </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/MonteCarloMonaco/MonteCarlo6.jpg"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto object-cover"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/MonteCarloMonaco/MonteCarlo7.jpg"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto object-cover"
+              />
+            </div>
+            <div className="project-image-container">
+              <Image
+                src="/projects/MonteCarloMonaco/MonteCarlo8.jpg"
+                width={800}
+                height={0}
+                alt=""
+                className="mx-auto object-cover"
+              />
+            </div>
           </div>
 
           <div className="bottom-navigation flex justify-between">
@@ -99,17 +127,17 @@ export default function page() {
                   className="inline-flex items-center group transition-all transform mr-2"
                 >
                   <FaChevronLeft className="mr-2 group-hover:-translate-x-2 text-xl transition" />
-                  Previous project: Jeddah Home, Saudi Arabia{" "}
+                  Previous project: Jeddah Corniche, Saudi Arabia{" "}
                 </Link>
               </h3>
             </div>
             <div className="next-project my-20">
               <h3 className="md:text-3xl text-slate-400 hover:text-slate-950 font-bold">
                 <Link
-                  href="../projects/pont-home"
+                  href="../projects/victoria-london"
                   className="inline-flex items-center group transition-all transform mr-2"
                 >
-                  Next project: Pont St. Home, London{" "}
+                  Next project: Victoria, London{" "}
                   <FaChevronRight className="ml-2 group-hover:translate-x-2 text-xl transition" />
                 </Link>
               </h3>

@@ -13,7 +13,7 @@ export default function page() {
         <div className="relative h-52 md:h-[90svh] hidden sm:block">
           <div className="relative z-10 h-full flex items-center justify-center">
             <h1 className="bg-slate-50/50 w-full text-center py-4">
-              Jeddah Home, Saudi Arabia
+              Jeddah Corniche, Saudi Arabia
             </h1>
             <div class="arrow bounce">
               <a
@@ -33,7 +33,7 @@ export default function page() {
         </div>
         <div className="container" id="project-details">
           <div className="grid md:grid-cols-2 mt-8 gap-8">
-            <h1 className="sm:hidden">Jeddah Home, Saudi Arabia</h1>
+            <h1 className="sm:hidden">Jeddah Corniche, Saudi Arabia</h1>
             <div className="project-image-container">
               <Image
                 src="/projects/JeddahHomeSaudiArabia-v2/MAIN-LOBBY-V2.png"

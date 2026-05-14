@@ -72,7 +72,7 @@ export default function Page() {
                   className="object-cover"
                 />
               </div>
-              <h2 className="text-lg">Jeddah Home, Saudi Arabia</h2>
+              <h2 className="text-lg">Jeddah Corniche, Saudi Arabia</h2>
             </div>
           </Link>
           <Link href="./projects/monte-carlo">
