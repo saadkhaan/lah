@@ -122,14 +122,14 @@ export default function HeroCarousel() {
       <swiper-slide>
         <div className="relative block w-screen h-screen h-screen-mobile">
           <Image
-            src="/projects/PontStHomeLondon/Pont2.jpg"
+            src="/projects/JeddahHomeSaudiArabia-v2/MAIN-ENTRANCE-LOBBY-V1.png"
             alt="a room"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
             fill
             className="w-full h-full object-cover object-center"
           />
           <p className="absolute uppercase text-white text-2xl w-full sm:w-auto text-shadow font-semibold sm:font-normal text-center sm:text-xl bottom-[48.5%] left-[50%] transform -translate-x-[50%] sm:bottom-20 sm:left-20 sm:translate-x-0">
-            <Link href="/projects/pont-home">Pont St. London</Link>
+            <Link href="/projects/pont-home">Jeddah Corniche, Saudi Arabia</Link>
           </p>
         </div>
       </swiper-slide>
